@@ -17,7 +17,7 @@ public class TaskScheduler {
     public void sendContinuousMessage() {
         Random random = new Random();
         Long l = random.nextLong(100000);
-        messagingTemplate.convertAndSend("/topic/message", l.toString());
+        messagingTemplate.convertAndSend("/topic/message2", l.toString());
         System.out.println("Sent: " + l);
     }
 }
